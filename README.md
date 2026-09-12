@@ -47,14 +47,6 @@ Webcam capture → Manual annotation (bbox JSON) → Train/val/test split
 
 *(Add your actual final loss numbers / a screenshot of the TensorBoard curves here if you have them — makes this section much stronger.)*
 
-## Running it
-
-> Fill this in to match your actual repo layout — e.g.:
-```bash
-# Open the notebook in Google Colab (uses Colab-specific webcam capture)
-# 1. Mount your Drive with the data/ and aug_data/ folders
-# 2. Run all cells to train, or load the saved facetracker.h5 to skip straight to inference
-```
 
 ## Limitations & future work
 
