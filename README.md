@@ -1,11 +1,11 @@
 
 # Real-Time Face Detection with a Custom CNN (VGG16 Backbone)
 
-A face detector built from scratch — own dataset, own annotations, own augmentation pipeline, and a custom-trained dual-head neural network that both classifies "face present" and regresses the bounding box, running live on webcam feed.
+A face detector built from scratch  own dataset, own annotations, own augmentation pipeline, and a custom-trained dual-head neural network that both classifies "face present" and regresses the bounding box, running live on webcam feed. Demo is added.
 
 ## What this actually does
 Most "face detection" tutorials just call a pretrained model like Haar Cascades or MTCNN. This project trains its own detector end-to-end:
-1. **Collected a custom dataset** — captured images directly from a live webcam feed (via browser JS inside Colab), then hand-annotated bounding boxes for each face.
+1. **Collected a custom dataset** captured images directly from a live webcam feed (via browser JS inside Colab), then hand-annotated bounding boxes for each face.
 2. **Built a bbox-aware augmentation pipeline** with Albumentations — random crops, horizontal/vertical flips, brightness/contrast/gamma shifts, RGB shifts — all while keeping bounding box coordinates correctly transformed alongside the image.
 3. **Trained a dual-head CNN** on top of a VGG16 backbone:
    - One head predicts whether a face is present (binary classification)
